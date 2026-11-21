@@ -21,3 +21,13 @@ Restore the latest backup with:
 ```sh
 ./scripts/restore-recode.sh
 ```
+
+If tracked game files are accidentally deleted, restore only the missing files
+from the current Git commit with:
+
+```sh
+./scripts/recover-source.sh
+```
+
+The repository contains the generated JavaScript runtime and recreation, but no
+original GameMaker `.gml` project sources.
